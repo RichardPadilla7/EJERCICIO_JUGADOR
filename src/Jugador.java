@@ -2,6 +2,7 @@ public class Jugador {
 
     String avatar, pais;
     int edad;
+    int saltos = 2;
 
     //JUGADOR 1
     public Jugador(){
@@ -41,12 +42,13 @@ public class Jugador {
         this.edad = edad;
     }
 
-    public void saltar(){
+    public void saltar(int saltos){
+        saltos += saltos;
         System.out.println("--------------------------------");
         System.out.println("El avatar: " + avatar);
         System.out.println("Su pais " + pais);
         System.out.println("Su edad: "  + edad);
-        System.out.println("El jugador 2 Salta al objetivo!!");
+        System.out.println("El jugador 2 Salta " + saltos +" veces al objetivo!!");
         System.out.println("--------------------------------");
     }
 

@@ -14,7 +14,7 @@ public class Incovaciones {
         System.out.println("--------------------------------");
         System.out.println("Jugador 2");
         Jugador jugador2 = new Jugador("Ariel777", "st.Domingo", 21);
-        jugador2.saltar();
+        jugador2.saltar(2);
         jugador2.patear();
         jugador2.correr();
 
