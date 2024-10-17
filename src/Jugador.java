@@ -1,15 +1,65 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+public class Jugador {
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    String avatar, pais;
+    int edad;
+
+    //JUGADOR 1
+    public Jugador(){
+        this.avatar = "RichardVN";
+        this.pais = "Ecuador";
+        this.edad = 20;
     }
+
+
+    public void patear(){
+        System.out.println("--------------------------------");
+        System.out.println("El avatar: " + avatar);
+        System.out.println("Su pais " + pais);
+        System.out.println("Su edad: "  + edad);
+        System.out.println("El jugador 1 Patea al rival!!");
+        System.out.println("--------------------------------");
+
+
+    }
+    public void correr(){
+        System.out.println("--------------------------------");
+        System.out.println("El avatar: " + avatar);
+        System.out.println("Su pais " + pais);
+        System.out.println("Su edad: "  + edad);
+        System.out.println("El jugador 1 Corre al objetivo!!");
+        System.out.println("--------------------------------");
+    }
+
+
+
+
+    //JUGADOR2
+
+    public Jugador(String avatar, String pais, int edad){
+        this.avatar = avatar;
+        this.pais = pais;
+        this.edad = edad;
+    }
+
+    public void saltar(){
+        System.out.println("--------------------------------");
+        System.out.println("El avatar: " + avatar);
+        System.out.println("Su pais " + pais);
+        System.out.println("Su edad: "  + edad);
+        System.out.println("El jugador 2 Salta al objetivo!!");
+        System.out.println("--------------------------------");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
