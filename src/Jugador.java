@@ -5,11 +5,12 @@ public class Jugador {
     int saltos = 2;
 
     //JUGADOR 1
-    public Jugador(){
-        this.avatar = "RichardVN";
-        this.pais = "Ecuador";
-        this.edad = 20;
+    public Jugador(String avatar, String pais, int edad){
+        this.avatar = avatar;
+        this.pais = pais;
+        this.edad = edad;
     }
+
 
 
     public void patear(){
@@ -17,7 +18,7 @@ public class Jugador {
         System.out.println("El avatar: " + avatar);
         System.out.println("Su pais " + pais);
         System.out.println("Su edad: "  + edad);
-        System.out.println("El jugador 1 Patea al rival!!");
+        System.out.println("El jugador Patea al rival!!");
         System.out.println("--------------------------------");
 
 
@@ -27,7 +28,7 @@ public class Jugador {
         System.out.println("El avatar: " + avatar);
         System.out.println("Su pais " + pais);
         System.out.println("Su edad: "  + edad);
-        System.out.println("El jugador 1 Corre al objetivo!!");
+        System.out.println("El jugador Corre al objetivo!!");
         System.out.println("--------------------------------");
     }
 
@@ -35,20 +36,13 @@ public class Jugador {
 
 
     //JUGADOR2
-
-    public Jugador(String avatar, String pais, int edad){
-        this.avatar = avatar;
-        this.pais = pais;
-        this.edad = edad;
-    }
-
     public void saltar(int saltos){
         saltos += saltos;
         System.out.println("--------------------------------");
         System.out.println("El avatar: " + avatar);
         System.out.println("Su pais " + pais);
         System.out.println("Su edad: "  + edad);
-        System.out.println("El jugador 2 Salta " + saltos +" veces al objetivo!!");
+        System.out.println("El jugador Salta " + saltos +" veces al objetivo!!");
         System.out.println("--------------------------------");
     }
 
